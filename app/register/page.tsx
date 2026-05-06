@@ -7,7 +7,7 @@ export default function RegisterPage() {
         이름, 지역, 희망 직종, 경력을 입력하시면 자동으로 일자리를 추천해 드립니다.
       </p>
 
-      {/* 폼 — 기능 구현은 다음 블록 */}
+      {/* 폼 — 저장 기능은 다음 블록 */}
       <form className="bg-white rounded-2xl shadow p-8 flex flex-col gap-6">
         {/* 이름 */}
         <div className="flex flex-col gap-2">
@@ -19,8 +19,7 @@ export default function RegisterPage() {
             name="name"
             type="text"
             placeholder="홍길동"
-            disabled
-            className="border-2 border-gray-300 rounded-xl px-5 py-4 text-xl text-gray-400 bg-gray-50 cursor-not-allowed"
+            className="border-2 border-gray-300 rounded-xl px-5 py-4 text-xl text-gray-900 bg-white focus:outline-none focus:border-blue-500"
           />
         </div>
 
@@ -34,8 +33,7 @@ export default function RegisterPage() {
             name="region"
             type="text"
             placeholder="서울 강남구"
-            disabled
-            className="border-2 border-gray-300 rounded-xl px-5 py-4 text-xl text-gray-400 bg-gray-50 cursor-not-allowed"
+            className="border-2 border-gray-300 rounded-xl px-5 py-4 text-xl text-gray-900 bg-white focus:outline-none focus:border-blue-500"
           />
         </div>
 
@@ -49,8 +47,7 @@ export default function RegisterPage() {
             name="desired_job"
             type="text"
             placeholder="경비, 청소, 사무보조 등"
-            disabled
-            className="border-2 border-gray-300 rounded-xl px-5 py-4 text-xl text-gray-400 bg-gray-50 cursor-not-allowed"
+            className="border-2 border-gray-300 rounded-xl px-5 py-4 text-xl text-gray-900 bg-white focus:outline-none focus:border-blue-500"
           />
         </div>
 
@@ -65,19 +62,17 @@ export default function RegisterPage() {
             type="number"
             placeholder="10"
             min={0}
-            disabled
-            className="border-2 border-gray-300 rounded-xl px-5 py-4 text-xl text-gray-400 bg-gray-50 cursor-not-allowed"
+            className="border-2 border-gray-300 rounded-xl px-5 py-4 text-xl text-gray-900 bg-white focus:outline-none focus:border-blue-500"
           />
         </div>
 
         <p className="text-lg text-amber-600 font-semibold mt-2">
-          ⚙ 기능 구현 예정 — 현재는 뼈대 화면입니다.
+          ⚙ 저장 기능은 다음 단계에서 구현됩니다.
         </p>
 
         <button
           type="submit"
-          disabled
-          className="mt-2 bg-blue-600 text-white text-2xl font-bold py-5 rounded-2xl shadow opacity-40 cursor-not-allowed"
+          className="mt-2 bg-blue-600 text-white text-2xl font-bold py-5 rounded-2xl shadow hover:bg-blue-700 transition"
         >
           등록하기
         </button>
